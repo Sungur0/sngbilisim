@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda - SNG Bilişim</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Rubik -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4da7de 0%, #9f84bd 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+            background-color: transparent !important;
+        }
+        .navbar-brand img {
+            max-height: 50px;
+        }
+        .book-call-btn {
+            background-color: #d94555;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+        .contact-number {
+            color: white;
+            font-weight: 500;
+        }
+        .hero-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin-top: -80px; /* To offset the top bar height */
+        }
+        .social-icons a {
+            color: white;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+        /* Center navbar links */
+        .navbar-nav {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .about-hero {
+            background: linear-gradient(135deg, #4da7de 0%, #9f84bd 100%);
+            padding: 120px 0 80px;
+            color: white;
+        }
+        .team-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        .team-card {
+            text-align: center;
+            margin-bottom: 30px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .team-card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .mission-section {
+            padding: 80px 0;
+        }
+        .value-card {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            background: white;
+        }
+
+        /* Footer Styles */
+        .footer-section {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 80px 0 20px;
+        }
+        .footer-section h4 {
+            color: #d94555;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .footer-section p {
+            color: #aaa;
+            line-height: 1.8;
+        }
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        .social-link {
+            width: 35px;
+            height: 35px;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        .social-link:hover {
+            background: #d94555;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: #d94555;
+            transform: translateX(5px);
+        }
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .contact-info i {
+            color: #d94555;
+            width: 20px;
+        }
+        .copyright-bar {
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 50px;
+        }
+        .copyright-bar p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .copyright-bar a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .copyright-bar a:hover {
+            color: #d94555;
+        }
+        .navbar-brand img.main-logo {
+            max-height: 80px;
+            width: auto;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-bg">
+        <div class="container py-2">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="contact-number">0552 221 31 58</div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container position-relative">
+                <a class="navbar-brand" href="#">
+                    <img src="./lgo1.png" alt="SNG Bilişim Hizmetleri" class="img-fluid main-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="./index.html">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./about.html">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Hizmetlerimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">İletişim</a>
+                        </li>
+                    </ul>
+                    <button class="book-call-btn ms-auto">İletişime Geçin</button>
+
+                </div>
+            </div>
+        </nav>
+  
+
+
+    <section class="about-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">SNG Bilişim Hakkında</h1>
+                    <p class="lead">
+                        2010 yılından bu yana işletmelere profesyonel IT çözümleri sunuyoruz. Deneyimli ekibimiz ve güncel teknoloji altyapımızla müşterilerimizin dijital dönüşümüne öncülük ediyoruz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <section class="mission-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="value-card">
+                        <h3 class="text-primary mb-4">Misyonumuz</h3>
+                        <p>İşletmelerin teknolojik altyapılarını güçlendirerek, verimliliklerini artırmak ve dijital dünyada rekabet güçlerini maksimize etmek.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="value-card">
+                        <h3 class="text-primary mb-4">Vizyonumuz</h3>
+                        <p>Türkiye'nin lider IT çözüm sağlayıcısı olarak, işletmelerin dijital dönüşümünde tercih edilen iş ortağı olmak.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- About Column -->
+                <div class="col-lg-4">
+                    <h4>Hakkımızda</h4>
+                    <p class="mt-4">
+                        SNG Bilişim olarak işletmenizin bilişim altyapısını güçlendirmek ve kesintisiz hizmet sunmak için yanınızdayız. Profesyonel IT çözümleri ve uzman kadromuzla hizmetinizdeyiz.
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-4">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul class="footer-links mt-4">
+                        <li><a href="./index.html">Ana Sayfa</a></li>
+                        <li><a href="./about.html">Hakkımızda</a></li>
+                        <li><a href="./services.html">Hizmetlerimiz</a></li>
+                        <li><a href="./contact.html">İletişim</a></li>
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="col-lg-4">
+                    <h4>İletişime Geçin</h4>
+                    <div class="contact-info mt-4">
+                        <p>
+                            <i class="fas fa-phone me-2"></i>
+                            0552 221 31 58
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-2"></i>
+                            info@sngbilisim.com
+                        </p>
+                        <p>
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            İstanbul, Türkiye
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="copyright-bar mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">© 2024 SNG Bilişim. Tüm hakları saklıdır.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">
+                            <a href="#">Gizlilik Politikası</a> | 
+                            <a href="#">Kullanım Şartları</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
